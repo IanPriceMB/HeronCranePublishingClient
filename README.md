@@ -1,2 +1,3 @@
 # Heron Crane Publishing Client
-Software Engineer Resume
+
+User facing cleient for Heron Crane Publishing
