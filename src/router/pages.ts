@@ -1,1 +1,1 @@
-export const pages = ['Software Engineering', 'Prompt Engineering', 'Writing', 'Content Creation', 'Video Games', 'Esports']
+export const pages = ['Home', 'Authors', 'Contact']

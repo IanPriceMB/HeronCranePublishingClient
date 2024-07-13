@@ -35,7 +35,9 @@ export function NavBar() {
           }}
         >
           {pages.map((page, index) => {
-            const url = page.replace(/ /g, '-').toLowerCase()
+            let url;
+            if (page === 'Home') { url = '/' }
+            else { url = page.replace(/ /g, '-').toLowerCase() }
             const isActive = `/${url}` === location.pathname
 
             return (
