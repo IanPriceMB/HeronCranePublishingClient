@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import { HamburgerMenu } from '../HamburgerMenu';
 import { pages } from '../../router/pages';
+import logo from '../../assets/HCFavicon.png'
 
 export function NavBar() {
   let location = useLocation();
@@ -14,20 +15,19 @@ export function NavBar() {
     <AppBar position='sticky'>
       <Toolbar>
         <HamburgerMenu menuItems={pages} />
-        <Typography
-          variant="h5"
-          noWrap
-          component={Link}
-          to="/"
-          sx={{
-            fontWeight: 700,
-            letterSpacing: '.3rem',
-            color: 'inherit',
-            textDecoration: 'none',
-          }}
-        >
-          Ian Price
-        </Typography>
+        <Link to="/">
+          <Box
+            component="img"
+            sx={{
+              height: 50,
+              width: 50,
+              maxHeight: { xs: 50, md: 50 },
+              maxWidth: { xs: 50, md: 50 },
+            }}
+            src={logo}
+            alt='logo'
+          />
+        </Link>
         <Box
           sx={{
             flexGrow: 1,
