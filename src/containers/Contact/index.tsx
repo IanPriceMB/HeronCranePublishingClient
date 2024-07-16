@@ -1,8 +1,16 @@
 import React from 'react'
+import EmailForm from '../../components/EmailForm'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+      <header>Contact Us</header>
+      <main>
+        <section>
+          <EmailForm />
+        </section>
+      </main>
+    </>
   )
 }
 
