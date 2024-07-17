@@ -1,8 +1,22 @@
 import React from 'react'
+import NovelCard from '../../components/NovelCard'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <header>
+        <h1>Checkout our books!</h1>
+      </header>
+      <main>
+        <ul>
+          <li>
+            <article>
+              <NovelCard />
+            </article>
+          </li>
+        </ul>
+      </main>
+    </>
   )
 }
 
