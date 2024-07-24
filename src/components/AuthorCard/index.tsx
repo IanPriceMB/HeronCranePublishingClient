@@ -1,8 +1,20 @@
 import React from 'react'
 
-const AuthorCard = () => {
+type AuthorCardProps = {
+  authorName: string;
+  authorAbout: string;
+}
+
+const AuthorCard = ({
+  authorName,
+  authorAbout,
+}: AuthorCardProps) => {
   return (
-    <div>AuthorCard</div>
+    <div>
+      <h1>{authorName}</h1>
+      <p>About the author</p>
+      <p>{authorAbout}</p>
+    </div>
   )
 }
 
