@@ -2,7 +2,16 @@ import React from 'react'
 
 const EmailForm = () => {
   return (
-    <div>EmailForm</div>
+    <main>
+      <form>
+        <label>Email:</label>
+        <br />
+        <input name="email" type='email' aria-label='eamil' />
+        <label>Message:</label>
+        <br />
+        <input name='message' type='text' aria-label='message' />
+      </form>
+    </main>
   )
 }
 
