@@ -14,6 +14,7 @@ const NovelCard = ({
   return (
     <main>
       <img src={novel} alt={title} />
+      <h2>{title}</h2>
       <p>{blerb}</p>
     </main>
   )
