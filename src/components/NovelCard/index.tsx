@@ -1,8 +1,21 @@
 import React from 'react'
 
-const NovelCard = () => {
+type NovelCardProps = {
+  novel: string
+  title: string
+  blerb: string
+}
+
+const NovelCard = ({
+  novel,
+  title,
+  blerb,
+}: NovelCardProps) => {
   return (
-    <div>NovelCard</div>
+    <main>
+      <img src={novel} alt={title} />
+      <p>{blerb}</p>
+    </main>
   )
 }
 
